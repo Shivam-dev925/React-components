@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Shivam-dev925/React-components/static/css/main.36482774.css",
+    "main.js": "/Shivam-dev925/React-components/static/js/main.b39dd8ff.js",
+    "index.html": "/Shivam-dev925/React-components/index.html",
+    "main.36482774.css.map": "/Shivam-dev925/React-components/static/css/main.36482774.css.map",
+    "main.b39dd8ff.js.map": "/Shivam-dev925/React-components/static/js/main.b39dd8ff.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.36482774.css",
+    "static/js/main.b39dd8ff.js"
+  ]
+}
