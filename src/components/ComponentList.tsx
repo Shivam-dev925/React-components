@@ -8,11 +8,11 @@ const components = [
   // Add more components as needed
 ];
 
-const ComponentList = () => {
-  const { selectedComponent, setSelectedComponent } = useComponentContext();
+const ComponentList: React.FC<{showBoxShadow?: boolean}> = ({showBoxShadow = true}) => {
+  const { selectedComponent, setSelectedComponent ,setDrawerOpen} = useComponentContext();
 
   return (
-    <div className="bg-white rounded-lg shadow p-4">
+    <div className={`bg-white rounded-lg ${showBoxShadow?'shadow':''} p-4`}>
       <h2 className="text-lg font-semibold mb-4">Components</h2>
       <ul className="space-y-2">
         {components.map((component) => (
@@ -23,7 +23,12 @@ const ComponentList = () => {
                   ? 'bg-blue-500 text-white'
                   : 'hover:bg-gray-100'
               }`}
-              onClick={() => setSelectedComponent(component.id)}
+              onClick={()=>{
+               setDrawerOpen(false);
+               setSelectedComponent(component.id)
+              }
+                
+               }
             >
               {component.name}
             </button>

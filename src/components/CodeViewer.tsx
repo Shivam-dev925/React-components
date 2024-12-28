@@ -24,6 +24,7 @@ const CodeViewer = () => {
       }
     }
   };
+  
   if (!selectedComponent) {
     return (
       <div className="bg-white rounded-lg shadow p-8 text-center text-gray-500">
