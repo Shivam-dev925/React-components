@@ -49,8 +49,9 @@ const CodeViewer = () => {
   return (
     <div className="bg-white rounded-lg shadow p-8">
       <h2 className="text-lg font-semibold mb-4">Source Code</h2>
+      <div className='relative'>
       <pre
-        className="relative bg-gray-800 text-white p-4 rounded-lg overflow-x-auto"
+        className=" bg-gray-800 text-white p-4 rounded-lg overflow-x-auto"
         onMouseEnter={() => handleHover(true)}
         onMouseLeave={() => handleHover(false)}
       >
@@ -77,6 +78,8 @@ const CodeViewer = () => {
           </svg>
         </button>
       </pre>
+      </div>
+     
       <ToastContainer/>
     </div>
   );
