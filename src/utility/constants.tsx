@@ -7,6 +7,7 @@ static  components = [
     subcomponents: [
       { id: 'buttonPrimary', name: 'Primary Button' },
       { id: 'buttonSecondary', name: 'Secondary Button' },
+      {id:'buttonWithImage',name:'Button with image'}
     ],
   },
   {

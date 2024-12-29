@@ -20,6 +20,12 @@ const ButtonSecondary = () => (
     Secondary Button
   </button>
 );
+const ButtonWithImage =()=>(
+<button className='flex justify-center items-center gap-1 bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded'>
+<img className='w-5' src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Red_dot.svg" alt="Beautiful Image"/>
+Button with image
+</button>
+);
 
 const CardWithImage = () => (
   <div className="max-w-sm rounded overflow-hidden shadow-lg p-4">
@@ -34,6 +40,7 @@ const CardWithImage = () => (
 export const componentRegistry: Record<string, React.ComponentType> = {
   buttonPrimary: ButtonPrimary,
   buttonSecondary: ButtonSecondary,
+  buttonWithImage:ButtonWithImage,
   cardWithImage: CardWithImage,
   input: Input,
 }; 
