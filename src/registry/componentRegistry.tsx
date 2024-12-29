@@ -1,21 +1,5 @@
 import React from 'react';
 
-// Example components
-const Button = () => (
-  <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-    Click me
-  </button>
-);
-
-const Card = () => (
-  <div className="max-w-sm rounded overflow-hidden shadow-lg p-4">
-    <h3 className="font-bold text-xl mb-2">Card Title</h3>
-    <p className="text-gray-700 text-base">
-      Some quick example text to build on the card title and make up the bulk of the card's content.
-    </p>
-  </div>
-);
-
 const Input = () => (
   <input
     type="text"
@@ -24,8 +8,32 @@ const Input = () => (
   />
 );
 
+// Subcomponents
+const ButtonPrimary = () => (
+  <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+    Primary Button
+  </button>
+);
+
+const ButtonSecondary = () => (
+  <button className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
+    Secondary Button
+  </button>
+);
+
+const CardWithImage = () => (
+  <div className="max-w-sm rounded overflow-hidden shadow-lg p-4">
+    <img className="w-full" src="https://via.placeholder.com/150" alt="Card" />
+    <h3 className="font-bold text-xl mb-2">Card with Image</h3>
+    <p className="text-gray-700 text-base">
+      This card has an image at the top.
+    </p>
+  </div>
+);
+
 export const componentRegistry: Record<string, React.ComponentType> = {
-  button: Button,
-  card: Card,
+  buttonPrimary: ButtonPrimary,
+  buttonSecondary: ButtonSecondary,
+  cardWithImage: CardWithImage,
   input: Input,
 }; 
