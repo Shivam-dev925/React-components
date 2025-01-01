@@ -14,11 +14,10 @@ const ComponentPreview = () => {
   }
 
   const Component = componentRegistry[selectedComponent];
-
   return (
     <div className="bg-white rounded-lg shadow p-8">
       <h2 className="text-lg font-semibold mb-4">Preview</h2>
-      <div className="border rounded-lg p-8 flex items-center justify-center">
+      <div className={`${selectedComponent.includes('modal')?'bg-gray-500/75 z-50':'bg-white'} border rounded-lg p-8 flex items-center justify-center`}>
         <Component />
       </div>
     </div>
